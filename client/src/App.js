@@ -6,7 +6,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Nav bg="dark">
 
+        </Nav>
       </div>
     </Router>
   );
