@@ -8,12 +8,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="nav-div d-flex justify-content-center">
+        <div className="nav-div">
           <Nav className="bg-dark p-2 positioned-nav justify-content-around">
             <Link to="/"><Button variant="outline-light">Home</Button></Link>
             <Link to="/about"><Button variant="outline-light">About</Button></Link>
           </Nav>
-          <Link to="/"><img src={pfsLogo} className="logo" width="150px" height="150px" /></Link>
+          <Link to="/"><img src={pfsLogo} className="positioned-logo" width="150px" height="150px" /></Link>
         </div>
       </div>
     </Router >
