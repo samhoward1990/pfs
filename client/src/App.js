@@ -4,6 +4,7 @@ import { Navbar, Nav, Image, Button } from 'react-bootstrap';
 import './App.css';
 
 import pfsLogo from './images/PFS_Logo-removebg.png';
+import Homepage from './pages/homepage/homepage';
 function App() {
   return (
     <Router>
@@ -15,8 +16,11 @@ function App() {
           </Nav>
           <Link to="/"><img src={pfsLogo} className="positioned-logo" width="150px" height="150px" /></Link>
         </div>
+        <Route exact path="/">
+          <Homepage />
+        </Route>
       </div>
-    </Router >
+    </Router>
   );
 }
 
